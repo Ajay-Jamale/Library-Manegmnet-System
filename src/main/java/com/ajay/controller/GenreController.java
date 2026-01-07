@@ -18,10 +18,7 @@ public class GenreController {
 
 	private final GenreService genreService;
 
-	@GetMapping("/test")
-	public String test() {
-	    return "Genre API is working";
-	}
+	
 
 	@PostMapping("/create")
 	public ResponseEntity<GenreDTO> createGenre( @RequestBody GenreDTO genreDTO) {
