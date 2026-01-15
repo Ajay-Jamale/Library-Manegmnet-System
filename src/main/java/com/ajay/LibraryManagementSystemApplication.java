@@ -8,7 +8,7 @@ public class LibraryManagementSystemApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryManagementSystemApplication.class, args);
-		System.err.println("Server Started Successfully...!");
+		System.err.println("LMS Server Started Successfully...!");
 	}
 
 }
