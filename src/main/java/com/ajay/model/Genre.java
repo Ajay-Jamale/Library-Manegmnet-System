@@ -56,7 +56,7 @@ public class Genre {
 	@Column(nullable = false)
 	private Boolean active = true;
 
-	/* ---------- SELF RELATION ---------- */
+	// this is for the self relationship 
 
 	@ManyToOne
 	@JsonIgnoreProperties("subGenra")
@@ -66,7 +66,7 @@ public class Genre {
 	@JsonIgnoreProperties("parentGenra")
 	private List<Genre> subGenra = new ArrayList<>();
 
-	/* ---------- AUDIT ---------- */
+	// time stamps 
 
 	@CreationTimestamp
 	private LocalDateTime createdAt;
